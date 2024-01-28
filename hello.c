@@ -10,7 +10,8 @@ static int hello_init(void) {
 
 static void hello_exit(void)
 {
-    printk(KERN_INFO "Goodbye, cruel world\n");
+    printk(KERN_INFO "Goodbye, cruel world!\n");
+    return 0;
 }
 
 module_init(hello_init);
